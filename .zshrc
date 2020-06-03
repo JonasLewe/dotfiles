@@ -104,17 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 #
-# Source Anaconda3
-source /home/jonas/anaconda3/etc/profile.d/conda.sh
 
-export PATH="/home/jonas/anaconda3/bin:$PATH"
-
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export PATH=$PATH:$JAVA_HOME/bin
-
-export SPARK_HOME=/opt/spark
-export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
-export PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
+source ~/.zsh_aliases
 
 #alias vim='nvim'
 alias oldvim='\vim'
@@ -128,47 +119,5 @@ alias shutdown='sudo shutdown -h 0'
 # Reboot
 alias reboot='sudo reboot'
 
-# VPN access
-alias vpn='sudo vpnc /etc/vpnc/vpnc.conf'
-
-# VPN exit
-alias vpnx='sudo vpnc-disconnect'
-
-# Quit
-alias q='exit'
-
-# Sers
-alias sers='echo "Hallo, läuft bei dir!"'
-
-# cd Bachelorarbeit
-alias ba='cd ~/Dropbox/LMU/Bachelor/WS_1819/Bachelorarbeit'
-
 # open pdf
 alias pdf='f() { okular &>/dev/null $1 &};f'
-
-# cowsay
-alias fortune='fortune | cowsay'
-
-# cmatrix
-alias x='cmatrix'
-
-# anaconda navigator
-alias anav='f() {anaconda-navigator &>/dev/null &};f'
-
-# master alias
-alias master='cd ~/Dropbox/LMU/Master/SS_20'
-
-# janis server
-alias janis-server='ssh jlewe@server.janisheld.de'
-
-# ssh Uniserver
-alias cip='ssh lewej@remote.cip.ifi.lmu.de'
-
-# switch Java Version (don't forget to update PATH!)
-alias switch-java-version='sudo update-alternatives --config java'
-
-# run kali
-alias kali='f() {/usr/lib/virtualbox/VirtualBoxVM --comment "Kali-Linux-2020.1-vbox-amd64" --startvm "{ff07a13f-bba8-4168-88b2-2585e2e51036}" &>/dev/null &};f'
-
-# access robot
-alias robo="ssh pi@192.168.0.229"

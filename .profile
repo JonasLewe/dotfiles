@@ -20,18 +20,28 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-PATH="/usr/local/sbin:/usr/sbin:/sbin:$PATH"
-PATH=$PATH:~/.scripts
-PATH=$PATH:~/.local/bin
-PATH=$PATH:~/.npmpath/bin
 
-# go stuff
-PATH=$PATH:~/go/bin
-export GOPATH=~/go
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 
-export ANDROID_HOME=~/.android-sdks
-export JAVA_HOME=$(dirname $(dirname $(readlink -f  /usr/bin/javac)))
 
-export DEBFULLNAME="Dominikus Gierlach"
-export DEBEMAIL="dominik.gierlach@gmail.com"
+#PATH="/usr/local/sbin:/usr/sbin:/sbin:$PATH"
+#PATH=$PATH:~/.scripts
+#PATH=$PATH:~/.local/bin
+#PATH=$PATH:~/.npmpath/bin
+
+# Source Anaconda3
+source /home/jonas/anaconda3/etc/profile.d/conda.sh
+
+export PATH="/home/jonas/anaconda3/bin:$PATH"
+
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
+
+export SPARK_HOME=/opt/spark
+export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+export PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
 
