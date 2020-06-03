@@ -113,6 +113,9 @@ alias oldvim='\vim'
 # Remove trailing EOL sign
 PROMPT_EOL_MARK=''
 
+# Quit
+alias q='exit'
+
 # Shutdown
 alias shutdown='sudo shutdown -h 0'
 
