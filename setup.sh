@@ -35,5 +35,7 @@ ln -s .dotfiles/.npmrc .npmrc
 ln -s .dotfiles/.ycm_extra_conf.py .ycm_extra_conf.py
 ln -s .dotfiles/.vimrc .vimrc
 
-
-echo "You need to configure vim manually!"
+echo "***********************************************************"
+echo " You need to configure vim and tmux manually!"
+echo " For tmux press \"strg + b + I\" to install all packages..."
+echo "***********************************************************"
