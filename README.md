@@ -1,7 +1,6 @@
 # Content
 
-This repo contains a collection of dotfiles that pose
-the core of my system setup.
+This repo contains a collection of dotfiles, based on the collection of @[Dominikus Gierlach](https://github.com/gierdo)
 
 # Purpose
 
