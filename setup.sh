@@ -45,7 +45,6 @@ ln -s .dotfiles/.vimrc .vimrc
 # install vim plugins
 vim +PluginInstall +qall
 
-tmux 
 
 echo "**************************************************************"
 echo " Success! We are done here."
