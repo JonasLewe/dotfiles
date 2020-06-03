@@ -8,7 +8,7 @@ sudo apt install software-properties-common apt-transport-https wget -y
 sudo apt install git zsh vim tmux ctags -y
 
 # change default shell
-#chsh -s /usr/bin/zsh root
+# chsh -s /usr/bin/zsh root
 
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 
