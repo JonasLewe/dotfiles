@@ -1,6 +1,6 @@
 # Content
 
-This repo contains a collection of dotfiles and other related files that pose
+This repo contains a collection of dotfiles that pose
 the core of my system setup.
 
 # Purpose
@@ -8,18 +8,15 @@ the core of my system setup.
 The main purpose of this repo is portability and backup of my own
 configuration.
 
-The repository can be cloned locally, relevant configuration files can be replaced with symlinks to the dotfiles file.
-
 If this setup should be helpful to anybody else, please feel
 free to copy, suggest, do whatever you like with it.
 
-# Other stuff
+# Usage
 
-The core setup of my system also consists the following tools/files/fonts etc., this list is most likely not complete:
+Use the provided setup script `setup.sh` to automatically configure your system.
 
-* vim
-* vundle
-* zsh
-* terminator
-* https://github.com/powerline/fonts.git
-* ctags
+Upon completion of the script, log into a new terminal and install the tmux config by typing `ctrl+b + I`.
+
+Enjoy.
+
+
