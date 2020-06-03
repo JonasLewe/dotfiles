@@ -24,6 +24,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # create symlinks
 rm .zshrc .tmux.conf .ctags .bashrc .npmrc .ycm_extra_conf.py .vimrc .profile
+touch ~/.dotfiles/.zsh_aliases
 
 ln -s .dotfiles/.zshrc .zshrc
 ln -s .dotfiles/.zsh_aliases .zsh_aliases
@@ -33,5 +34,6 @@ ln -s .dotfiles/.bashrc .bashrc
 ln -s .dotfiles/.npmrc .npmrc
 ln -s .dotfiles/.ycm_extra_conf.py .ycm_extra_conf.py
 ln -s .dotfiles/.vimrc .vimrc
-ln -s .dotfiles/.profile .profile
 
+
+echo "You need to configure vim manually!"
