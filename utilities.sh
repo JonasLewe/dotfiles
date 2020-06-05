@@ -9,10 +9,10 @@ sudo add-apt-repository universe
 sudo apt install htop snapd gparted -y
 
 # install java
-sudo apt install default-jdk
+sudo apt install default-jdk -y
 
 # install thunderbird
-sudo apt install thunderbird
+sudo apt install thunderbird -y
 
 # install chrome
 cd /home/$USER/Downloads
@@ -36,13 +36,13 @@ sudo snap install vlc
 
 # install zoom
 wget https://zoom.us/client/latest/zoom_amd64.deb
-sudo apt install ./zoom_amd64.deb
+sudo apt install ./zoom_amd64.deb -y
 
 # install flameshot
-sudo apt install flameshot
+sudo apt install flameshot -y
 
 # install wireshark
-sudo apt install wireshark
+sudo apt install wireshark -y
 
 # install dropbox
-sudo apt install nautilus-dropbox
+sudo apt install nautilus-dropbox -y
