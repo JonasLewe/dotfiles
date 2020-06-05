@@ -107,6 +107,10 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh_aliases
 
+#### Testing ####
+[[ $TMUX = "" ]] && export TERM="xterm-256color"
+#################
+
 #alias vim='nvim'
 alias oldvim='\vim'
 
