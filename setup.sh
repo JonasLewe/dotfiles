@@ -41,6 +41,8 @@ ln -s .dotfiles/.bashrc .bashrc
 ln -s .dotfiles/.npmrc .npmrc
 ln -s .dotfiles/.ycm_extra_conf.py .ycm_extra_conf.py
 ln -s .dotfiles/.vimrc .vimrc
+ln -s .dotfiles/.profile .profile
+
 
 # install vim plugins
 vim +PluginInstall +qall
