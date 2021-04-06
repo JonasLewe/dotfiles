@@ -33,11 +33,6 @@ eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 #PATH=$PATH:~/.local/bin
 #PATH=$PATH:~/.npmpath/bin
 
-# Source Anaconda3
-source $HOME/anaconda3/etc/profile.d/conda.sh
-
-export PATH="$HOME/anaconda3/bin:$PATH"
-
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH=$PATH:$JAVA_HOME/bin
 
