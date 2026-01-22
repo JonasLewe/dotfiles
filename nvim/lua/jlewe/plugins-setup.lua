@@ -101,6 +101,12 @@ return packer.startup(function(use)
   }) -- enhanced lsp uis
   use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
+  -- R support
+  use("jalvesaq/Nvim-R")
+
+  -- Latex support
+  use("lervag/vimtex")
+
 -- end of plugins list
   if packer_bootstrap then
     require("packer").sync()
